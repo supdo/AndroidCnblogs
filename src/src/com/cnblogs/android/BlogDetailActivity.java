@@ -152,7 +152,9 @@ public class BlogDetailActivity extends BaseActivity
 			webView.setScrollBarStyle(0);
 			WebSettings webSetting = webView.getSettings();
 			webSetting.setJavaScriptEnabled(true);
-			webSetting.setPluginsEnabled(true);
+			//webSetting.setPluginsEnabled(true);
+			//WebView.getSettings().setPluginsEnabled();函数从18版本开始不再支持了，改成了WebView.getSettings().setPluginState(WebSettings.PluginState.ON);
+			webSetting.setPluginState(WebSettings.PluginState.ON);
 			webSetting.setNeedInitialFocus(false);
 			webSetting.setSupportZoom(true);
 

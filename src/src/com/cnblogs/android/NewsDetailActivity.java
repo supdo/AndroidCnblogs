@@ -133,7 +133,8 @@ public class NewsDetailActivity extends BaseActivity implements OnGestureListene
 			webView.setScrollBarStyle(0);
 			WebSettings webSetting = webView.getSettings();
 	    	webSetting.setJavaScriptEnabled(true);
-	    	webSetting.setPluginsEnabled(true);
+	    	//webSetting.setPluginsEnabled(true);
+	    	webSetting.setPluginState(WebSettings.PluginState.ON);
 	    	webSetting.setNeedInitialFocus(false);
 	    	webSetting.setSupportZoom(true);
 	    	webSetting.setCacheMode(WebSettings.LOAD_DEFAULT|WebSettings.LOAD_CACHE_ELSE_NETWORK);

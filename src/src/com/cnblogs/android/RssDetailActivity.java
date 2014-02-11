@@ -123,7 +123,8 @@ public class RssDetailActivity extends BaseActivity
 			webView.setScrollBarStyle(0);
 			WebSettings webSetting = webView.getSettings();
 			webSetting.setJavaScriptEnabled(true);
-			webSetting.setPluginsEnabled(true);
+			//webSetting.setPluginsEnabled(true);
+			webSetting.setPluginState(WebSettings.PluginState.ON);
 			webSetting.setNeedInitialFocus(false);
 			webSetting.setSupportZoom(true);
 
